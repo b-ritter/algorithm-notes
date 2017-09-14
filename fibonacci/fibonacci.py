@@ -1,5 +1,5 @@
 # Return the nth term in the fibonacci sequence
-# 1, 1, 2, 3, 5, 8
+# 1, 1, 2, 3, 5, 8...
 
 def fib_slow(n):
     if n in (1,2):
@@ -14,5 +14,4 @@ def fib_fast(n):
     else:
         for i in range(2,n):
             fib.append(fib[i-1]+fib[i-2])
-    print(fib)
     return fib[n-1]
